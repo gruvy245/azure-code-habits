@@ -10,8 +10,7 @@ devcontainer/init:
 .PHONY: devcontainer/terraform/init
 devcontainer/terraform/init: devcontainer/init
 	@$(MAKE) --no-print-directory \
-		aws/cli/install/v2 \
-		aws/cli/autocomplete \
+		az/cli/install \
 		terraform/install \
 		terraform-docs/install \
 		checkov/install \
